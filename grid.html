@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Grid Layout</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend Deca">
+        <style>
+            body{margin: 0;color: white; font-family: 'Lexend Deca';}
+                nav{text-align: right;margin:24px;}
+nav a{text-decoration: none;padding: 14px 16px;}
+.gridcon{display: grid;background-color: #1a1c28;padding: 16px;gap: 16px;height: 504px;margin: 200px;
+grid-template-areas: 'header header header header nav nav'
+'menu menu menu aside aside aside'
+'menu menu menu footer footer footer';
+}
+.one{grid-area: header; background-color: #eb5020;} 
+.two{grid-area: nav;background-color: #ffa501;} 
+.three{grid-area: menu;background-color: #05aa42;} 
+.four{grid-area: aside;background-color: #01aefd;} 
+.five{grid-area: footer;background-color: #01aefd;}
+</style>
+    </head>
+
+<body>
+    
+<header>
+
+    <nav>
+        <a href="index.html">Flexbox</a>
+        <a href="grid.html">Grid</a>
+    </nav>
+                </header>
+                
+                <div class="gridcon">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+                </div>
+                </body>
+                </html>
